@@ -1,6 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes,Link } from 'react-router-dom';
 import Layouts from './component/Layouts.js';
+import ProductDetails from "./component/ProductDetails.js"
+import Mac from './component/IMac.js';
+import IMac from './component/IMac.js';
+import MacMini from "./component/MacMini .js"
+import IPadPro from "./component/IPadPro.js"
+import IPad from "./component/IPad.js"
+import IPhone from "./component/IPhone.js"
+import Watch from "./component/Watch.js"
+import Audio from "./component/Audio.js"
+import AppleTv from "./component/AppleTv.js"
+import Accessories from "./component/Accessories.js"
+import ISystemCare from "./component/ISystemCare.js"
 
 function App() {
   return (
@@ -9,6 +21,21 @@ function App() {
         <Routes>
           <Route path='/' element={<Layouts />} >
               {/* <Route/> */}
+                <Route path="productdetails" element={<ProductDetails />} />
+                <Route path="mac" element={<IMac />} />
+                <Route path="macmini" element={<MacMini/>} />
+                <Route path="ipadpro" element={<IPadPro />} />
+                <Route path="ipad" element={<IPad />} />
+                <Route path="iphone" element={<IPhone />} />
+                <Route path="watch" element={<Watch />} />
+                <Route path="audio" element={<Audio />} />
+                <Route path="appletv" element={<AppleTv />} />
+                <Route path="accessories" element={<Accessories />} />
+                <Route path="isystemcare" element={<ISystemCare />} />
+                
+
+
+
 
 
           </Route>
