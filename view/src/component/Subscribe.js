@@ -9,10 +9,9 @@ function Subscribe() {
   <div className="text">
     <div className="box_subscribe">
       <h3>
-        {/* Subscribe to our newsletter and be the first who benefits from our
+        Subscribe to our newsletter and be the first who benefits from our
         offers. Promotions and new product launches straight to your
-        mailbox. */}
-        Special Offers
+        mailbox.
       </h3>
     </div>
 
