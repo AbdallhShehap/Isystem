@@ -8,9 +8,10 @@
 
 .text {
     color: white;
+    margin: 0 auto; 
+    width: 60%;
 
     /* background-color: rgb(255, 240, 244); /
-    width: 60%;
     margin: 0 auto; / Add this line to horizontally center the text /
     padding: 20px; / Add some padding for better visual appearance */
 }
