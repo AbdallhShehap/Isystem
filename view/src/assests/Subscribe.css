@@ -1,0 +1,24 @@
+.subscrib {
+    width: 100%;
+    background-color: #27579A;
+    height: 230px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.text {
+    color: white;
+
+    /* background-color: rgb(255, 240, 244); /
+    width: 60%;
+    margin: 0 auto; / Add this line to horizontally center the text /
+    padding: 20px; / Add some padding for better visual appearance */
+}
+.subscribe{
+    display: flex;
+    justify-content: center;
+  }
+  .box_subscribe{
+    width: 80%;
+text-align: center;
+  }
