@@ -6,6 +6,12 @@ import { LinkContainer } from "react-router-bootstrap";
 import "../assests/Layouts.css";
 import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Image from "react-bootstrap/Image";
+import facebook from "../images/facebook.png";
+import instagram from "../images/instagram.png";
+import youtube from "../images/youtube.png";
+import twitter from "../images/twitter.png";
+
 import {
   MDBFooter,
   MDBContainer,
@@ -16,7 +22,7 @@ import {
 } from "mdb-react-ui-kit";
 import Button from "@mui/material/Button";
 import Subscribe from "./Subscribe";
-
+import Home from "../pages/Home";
 function Layouts() {
   return (
     <>
@@ -35,58 +41,58 @@ function Layouts() {
             </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="m-auto nav_categories">
+              <Nav className="m-auto nav_categories" >
                 <LinkContainer to="/cart">
-                  <Nav.Link>
+                  <Nav.Link  className="catigories_type">
                     {/* <FaShoppingCart /> */}
                     Mac
                   </Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/signin">
-                  <Nav.Link href="/login">
+                  <Nav.Link href="/login" className="catigories_type" id="catigories_type">
                     {/* <FaUser /> */}
                     iPad
                   </Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/cart">
-                  <Nav.Link>
+                  <Nav.Link className="catigories_type" id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     iPhone
                   </Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/cart">
-                  <Nav.Link>
+                  <Nav.Link className="catigories_type" id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     Watch
                   </Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/cart">
-                  <Nav.Link>
+                  <Nav.Link className="catigories_type" id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     Audio
                   </Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/cart">
-                  <Nav.Link>
+                  <Nav.Link className="catigories_type"id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     Apple Tv
                   </Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/cart">
-                  <Nav.Link>
+                  <Nav.Link className="catigories_type"id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     Accessories
                   </Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/cart">
-                  <Nav.Link>
+                  <Nav.Link className="catigories_type" id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     iSystem Care
                   </Nav.Link>
                 </LinkContainer>
               </Nav>
               <form class="nosubmit">
-                <input class="nosubmit" type="search" placeholder="Search..." />
+                <input class="nosubmit" type="search"  />
               </form>
 
               <Nav className="ml-auto">
@@ -115,38 +121,13 @@ function Layouts() {
           bgColor="light"
           className="text-center text-lg-start text-muted"
         >
-          {/* <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <div className="me-5 d-none d-lg-block">
-              <span>Get connected with us on social networks:</span>
-            </div>
-
-            <div>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="facebook-f" />
-              </a>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="twitter" />
-              </a>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="google" />
-              </a>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="instagram" />
-              </a>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="linkedin" />
-              </a>
-              <a href="" className="me-4 text-reset">
-                <MDBIcon fab icon="github" />
-              </a>
-            </div>
-          </section> */}
-<Subscribe/>
-          <section className="footer">
-            <MDBContainer className="text-center text-md-start mt-5">
+          <Home />
+          <Subscribe />
+         
+            <MDBContainer className="text-center text-md-start footer"fluid>
               <MDBRow className="mt-3">
                 <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4 footer_title">
+                  <h6 className="fw-bold mb-4 footer_title">
                     Our Company
                   </h6>
                   <p>
@@ -172,7 +153,7 @@ function Layouts() {
                 </MDBCol>
 
                 <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4 footer_title">
+                  <h6 className=" fw-bold mb-4 footer_title">
                     Our Services
                   </h6>
                   <p>
@@ -191,51 +172,47 @@ function Layouts() {
                     </a>
                   </p>
                 </MDBCol>
-
-                <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4 footer_title">
-                    Categories
+                <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
+                  <h6 className=" fw-bold mb-4 footer_title">
+                    Our Categories
                   </h6>
                   <p>
-                    <MDBIcon icon="home" className="me-2" />
-                    Shop All{" "}
+                    <a href="#!" className="text-reset">
+                      Shop All
+                    </a>
                   </p>
                   <p>
-                    <MDBIcon icon="envelope" className="me-3" />
-                    Mac{" "}
+                    <a href="#!" className="text-reset">
+                    Mac
+                    </a>
                   </p>
                   <p>
-                    <MDBIcon icon="phone" className="me-3" />
+                    <a href="#!" className="text-reset">
                     iPhone
-                  </p>
-                  <p>
-                    <MDBIcon icon="print" className="me-3" /> iPad
+                    </a>
                   </p>
                 </MDBCol>
-                <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4 footer_title">
-                    <MDBIcon icon="gem" className="me-3" />
+           
+                <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4 ">
+                  <h6 className=" fw-bold mb-4 footer_title">
+                    <MDBIcon icon="gem"  />
                     Subscribe & Follow us{" "}
                   </h6>
                   <p>
                     Subscribe to our newsletter and get to know our news, deals,
                     and offers.
                   </p>
-                  <div className="subscribe">
-                    <MDBInput
-                      placeholder="Enter your email"
-                      id="form1 send"
-                      type="text"
-                    />
-
-                    <Button variant="contained" >Send</Button>
+                  <div className="social_media_icon">
+                    <Image src={youtube} fluid width={"20px"} />
+                    <Image src={facebook} fluid width={"20px"} />
+                    <Image src={instagram} fluid width={"20px"} />
+                    <Image src={twitter} fluid width={"20px"} />
                   </div>
+
+                 
                 </MDBCol>
               </MDBRow>
             </MDBContainer>
-          </section>
-
-         
         </MDBFooter>
       </footer>
     </>
