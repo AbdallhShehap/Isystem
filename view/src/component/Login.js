@@ -26,7 +26,7 @@ export default function Login() {
             border: "1px solid ",
             borderRadius: "25px",
             margin: "5%",
-            padding: "5%",
+            padding: "4%",
           }}
         >
           <InputGroup className="mb-3">
