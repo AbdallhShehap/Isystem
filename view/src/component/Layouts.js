@@ -106,8 +106,7 @@ function Layouts() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </header>
-
+      </header>    
       <Outlet />
 
       <footer>
