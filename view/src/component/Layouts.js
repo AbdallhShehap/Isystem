@@ -94,6 +94,9 @@ function Layouts() {
               <form class="nosubmit">
                 <input class="nosubmit" type="search"  />
               </form>
+              {/* <form class="nosubmit">
+                <input class="nosubmit" type="search" placeholder="Search..." />
+              </form> */}
 
               <Nav className="ml-auto">
                 <LinkContainer to="/cart">
