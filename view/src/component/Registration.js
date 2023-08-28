@@ -11,7 +11,7 @@ import "../assests/Registration.css"
 
 export default function Registration() {
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <Col className='imgRegistration' style={{ margin: "5%"  }}>
           <img
@@ -25,11 +25,11 @@ export default function Registration() {
         <Col
         className='inputRegistration'
           style={{
-            width: "40%",
+            width: "30%",
             border: "1px solid ",
             borderRadius: "25px",
             margin: "5%",
-            padding: "5%",
+            padding: "2%",
           }}
         >
           <InputGroup className="mb-3">
