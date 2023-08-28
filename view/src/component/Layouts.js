@@ -85,9 +85,9 @@ function Layouts() {
                   </Nav.Link>
                 </LinkContainer>
               </Nav>
-              <form class="nosubmit">
+              {/* <form class="nosubmit">
                 <input class="nosubmit" type="search" placeholder="Search..." />
-              </form>
+              </form> */}
 
               <Nav className="ml-auto">
                 <LinkContainer to="/cart">

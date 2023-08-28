@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes,Link } from 'react-router-dom';
 import Layouts from './component/Layouts.js';
 import ProductDetails from "./component/ProductDetails.js"
-import Mac from './component/IMac.js';
 import IMac from './component/IMac.js';
 import MacMini from "./component/MacMini .js"
 import IPadPro from "./component/IPadPro.js"
@@ -13,6 +12,9 @@ import Audio from "./component/Audio.js"
 import AppleTv from "./component/AppleTv.js"
 import Accessories from "./component/Accessories.js"
 import ISystemCare from "./component/ISystemCare.js"
+import Login from './component/Login.js';
+import  Registration from "./component/Registration"
+
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
                 <Route path="appletv" element={<AppleTv />} />
                 <Route path="accessories" element={<Accessories />} />
                 <Route path="isystemcare" element={<ISystemCare />} />
+                <Route path="login" element={<Login />} />
+                <Route path="registration" element={<Registration />} />
                 
 
 
