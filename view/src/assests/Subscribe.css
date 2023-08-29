@@ -1,25 +1,49 @@
 .subscrib {
-    width: 100%;
-    background-color: #27579A;
-    height: 230px;
-    text-align: center;
-    padding-top: 50px;
+  width: 100%;
+  background-color: #27579a;
+  height: 230px;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .text {
-    color: white;
-    margin: 0 auto; 
-    width: 60%;
+  color: white;
+  margin: 0 auto;
+  width: 60%;
 
-    /* background-color: rgb(255, 240, 244); /
-    margin: 0 auto; / Add this line to horizontally center the text /
-    padding: 20px; / Add some padding for better visual appearance */
+ /* background-color: rgb(255, 240, 244); 
+    margin: 0 auto; 
+    padding: 20px;  */
 }
-.subscribe{
-    display: flex;
-    justify-content: center;
+.subscribe {
+  display: flex;
+  justify-content: center;
+}
+.box_subscribe {
+  width: 90%;
+  text-align: center;
+}
+.subscribe_title {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  /* .box_subscribe{
+
+    }  */
+  .subscribe_title {
+    font-size: 15px;
   }
-  .box_subscribe{
-    width: 80%;
-text-align: center;
+  .subscrib {
+    padding-top: 15px;
   }
+  #subscribe_btn {
+    margin-left: 60px;
+    font-size: 8px;
+    font-weight: bold;
+  }
+  .input_subscribe::placeholder {
+   
+    font-size: 12px;
+  }
+}
