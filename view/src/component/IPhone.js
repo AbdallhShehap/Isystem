@@ -3,6 +3,7 @@ import "../assests/Iphone.css";
 import Swiper from "swiper";
 
 import "swiper/swiper-bundle.css";
+import CategoryCard from "./AllProduct";
 
 export default function IPhone() {
   const swiperRef = useRef(null);
@@ -68,43 +69,7 @@ export default function IPhone() {
             </div>{" "}
           </div>
         </div>
-        <div className="row">
-          <div className="col">
-            <div className="swiper mySwiper">
-              <div className="swiper-wrapper">
-              <div class="swiper-slide">
-              <button type="button" class="btn btn-outline-primary">iPhone 14</button>
-
-                </div>
-                <div class="swiper-slide">
-                <button type="button" class="btn btn-outline-primary">Primary</button>
-
-                </div>
-                <div class="swiper-slide">
-                <button type="button" class="btn btn-outline-primary">Primary</button>
-
-                </div>
-                <div class="swiper-slide">
-                <button type="button" class="btn btn-outline-primary">Primary</button>
-
-                </div>
-                <div class="swiper-slide">
-                <button type="button" class="btn btn-outline-primary">Primary</button>
-
-                </div>              </div>
-            </div>{" "}
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <button className="prev-button" onClick={handlePrevSlide}>
-              Previous
-            </button>
-            <button className="next-button" onClick={handleNextSlide}>
-              Next
-            </button>
-          </div>
-        </div>
+        <CategoryCard/>
       </div>
     </div>
   );

@@ -2,14 +2,14 @@ import React from "react";
 import cart from "../images/cart.png";
 import airpods from "../images/airpods.png";
 import "../assests/Cards.css";
-function CardSlider({title}) {
+function CardSlider() {
   return (
     <div>
-      <section className="pt-5 pb-5">
+      {/* <section className="pt-5 pb-5"> */}
         <div className="container">
           <div className="row">
             <div >
-              <h3 className="mb-3 special_offer">{title}</h3>
+              <h3 className="mb-3 special_offer">hjBJB</h3>
             </div>
 
             <div className="col-12">
@@ -469,6 +469,7 @@ function CardSlider({title}) {
                     data-target="#carouselExampleIndicators2"
                     data-slide-to="2"
                   ></li>
+                  {/* Add more <li> elements for additional pages */}
                 </ol> 
           </div>
               <a
@@ -484,7 +485,7 @@ function CardSlider({title}) {
           </div>
         </div>
         </div>
-      </section>
+      {/* </section> */}
     </div>
   );
 }

@@ -126,7 +126,9 @@ function Home() {
       </div>
       <CardSlider />
       <CardCategories />
-      <TopSellingCard />
+      <TopSellingCard
+       
+      />
     </>
   );
 }

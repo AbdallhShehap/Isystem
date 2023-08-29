@@ -2,14 +2,14 @@ import React from "react";
 import cart from "../images/cart.png";
 import airpods from "../images/airpods.png";
 import "../assests/Cards.css";
-function TopSellingCard() {
+function CardSlider({title}) {
   return (
     <div>
-      <section className="pt-5 pb-5">
+      {/* <section className="pt-5 pb-5"> */}
         <div className="container">
           <div className="row">
             <div >
-              <h3 className="mb-3 special_offer">s,knclksdm</h3>
+              <h3 className="mb-3 special_offer">{title}</h3>
             </div>
 
             <div className="col-12">
@@ -484,9 +484,9 @@ function TopSellingCard() {
           </div>
         </div>
         </div>
-      </section>
+      {/* </section> */}
     </div>
   );
 }
 
-export default TopSellingCard;
+export default CardSlider;
