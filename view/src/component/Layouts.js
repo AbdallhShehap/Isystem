@@ -119,9 +119,9 @@ function Layouts() {
           </Container>
         </Navbar>
       </header>    
-      <Outlet />
+    
       
-      {isHomePage && <Home />}
+      {isHomePage ? <Home />:  <Outlet />}
 
         <Subscribe />
       <footer>
