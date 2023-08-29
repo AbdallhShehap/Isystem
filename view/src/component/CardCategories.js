@@ -19,16 +19,19 @@ export default function CardCategories() {
         </Col>
       </Row>
         <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       <Row>
-        <Col xs={12} md={12} lg={6} >
+        <Col xs={12} md={12} lg={7} >
         <Link to="">
-        <img src={require("../images/image (1).png")} width="70%" />
+        <img src={require("../images/image (1).png")} width="90%" height="100%" />
         </Link>
         </Col>
 
         <Col xs={12} md={12} lg={5} >
         <Link to="">
-        <img md={{ span: 4, offset: 4 }} src={require("../images/image (1).png")} width="120%" />
+        <img md={{ span: 4}} src={require("../images/image (1).png")} width="100%" height="100%"/>
         </Link>
         </Col>
       
@@ -37,29 +40,25 @@ export default function CardCategories() {
       <br></br>
       <Row>
 
-      <Col xs={12} md={12} lg={8} style={{marginTop:"-15%"}} >
-      <Link to="">
-        <img src={require("../images/image (1).png")} width="100%" />
-       </Link>
-        </Col>
 
-
-      <Col xs={12} md={12} lg={4} >
+      <Col xs={12} md={12} lg={5} >
       <Link to="">
-        <img src={require("../images/image (1).png")} width="100%" />
+        <img src={require("../images/image (1).png")} width="85%" height="100%" />
        </Link>
        </Col>
 
-       
-       
-      
+
+      <Col xs={12} md={12} lg={7} >
+      <Link to="">
+        <img src={require("../images/image (1).png")} width="100%" height="100%"/>
+       </Link>
+        </Col>
+
+   
       </Row>
 
 
       <Row>
-      {/* <Col xs={12} lg={5} style={{marginTop:"-15%"}} >
-        <img  src={require("../images/image (1).png")} width="120%" />
-        </Col> */}
       <Col xs={12} md={12} lg={6}  >
       <Link to="">
         <img  src={require("../images/image (1).png")} width="100%" />

@@ -13,13 +13,10 @@ export default function Registration() {
   return (
     <Container fluid>
       <Row>
-        <Col className='imgRegistration' style={{ margin: "5%"  }}>
-          <img
-          
-            src={require("../images/imgLogin.png")}
-            
-            alt="Login Image"
-           />
+      <Col className='imgLogin'style={{marginTop:"6%"}} >
+      
+        <img src={require("../images/Mask_Group_2.png")}  alt="Your Image" fluid width={"100%"}height={"90%"} />
+
         </Col>
 
         <Col
@@ -29,10 +26,13 @@ export default function Registration() {
             border: "1px solid ",
             borderRadius: "25px",
             margin: "5%",
-            padding: "2%",
+            // padding: "2%",
+            // paddingTop:"7rem"
+
           }}
         >
-          <InputGroup className="mb-3">
+          <h1 style={{textAlign:"center"}}> Sign Up</h1>
+          <InputGroup className="mb-4 mt-5">
             <Form.Control
               placeholder="Username"
               aria-label="Username"
@@ -40,7 +40,7 @@ export default function Registration() {
             />
           </InputGroup>
 
-          <InputGroup className="mb-3">
+          <InputGroup className="mb-4">
             <Form.Control
               placeholder="email"
               aria-label="email"
@@ -48,7 +48,7 @@ export default function Registration() {
             />
           </InputGroup>
 
-          <InputGroup className="mb-3">
+          <InputGroup className="mb-4">
             <Form.Control
               placeholder="Password"
               aria-label="Password"

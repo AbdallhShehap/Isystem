@@ -4,7 +4,7 @@ import { FaShoppingCart, FaUser, FaSearch } from "react-icons/fa";
 import logoApple from "../images/logoApple.png";
 import { LinkContainer } from "react-router-bootstrap";
 import "../assests/Layouts.css";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Image from "react-bootstrap/Image";
 import facebook from "../images/facebook.png";
@@ -24,6 +24,9 @@ import Button from "@mui/material/Button";
 import Subscribe from "./Subscribe";
 import Home from "../pages/Home";
 function Layouts() {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/" || location.pathname === "/home";
+
   return (
     <>
       <header>
@@ -105,8 +108,8 @@ function Layouts() {
                     Cart
                   </Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/signin">
-                  <Nav.Link href="/login">
+                <LinkContainer to="/login">
+                  <Nav.Link >
                     <FaUser />
                     LogIn
                   </Nav.Link>
@@ -117,13 +120,14 @@ function Layouts() {
         </Navbar>
       </header>    
       <Outlet />
+      
+      {isHomePage && <Home />}
 
       <footer>
         <MDBFooter
           bgColor="light"
           className="text-center text-lg-start text-muted"
         >
-          <Home />
           <Subscribe />
          
             <MDBContainer className="text-center text-md-start footer"fluid>
