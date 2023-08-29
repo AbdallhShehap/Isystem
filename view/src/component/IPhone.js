@@ -3,7 +3,7 @@ import "../assests/Iphone.css";
 import Swiper from "swiper";
 
 import "swiper/swiper-bundle.css";
-import CategoryCard from "./AllProduct";
+import AllProduct from "./AllProduct";
 
 export default function IPhone() {
   const swiperRef = useRef(null);
@@ -69,7 +69,7 @@ export default function IPhone() {
             </div>{" "}
           </div>
         </div>
-        <CategoryCard/>
+        <AllProduct/>
       </div>
     </div>
   );
