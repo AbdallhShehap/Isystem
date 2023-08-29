@@ -15,8 +15,11 @@ import iPhone14Backgroundedit from "../images/iPhone14Backgroundedit.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import CardSlider from "../component/CardSlider.js";
+import CardCategories from "../component/CardCategories"
 function Home() {
   return (
+    <>
+  
     <div>
       <Carousel
         autoPlay
@@ -57,6 +60,7 @@ function Home() {
           <img src={backgroundIphone} alt="" />
         </div>
       </Carousel>
+
       <div className="container-fluid text-center">
         <div className="row">
           <div className="col col_top_categories">
@@ -120,8 +124,10 @@ function Home() {
           </div>
         </div>
       </div>
-        <CardSlider/>
+        {/* <CardSlider/> */}
     </div>
+    <CardCategories/>
+    </>
   );
 }
 

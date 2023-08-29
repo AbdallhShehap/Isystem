@@ -14,7 +14,7 @@ import Accessories from "./component/Accessories.js"
 import ISystemCare from "./component/ISystemCare.js"
 import Login from './component/Login.js';
 import  Registration from "./component/Registration"
-
+import Home from "./pages/Home.js"
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
           <Route path='/' element={<Layouts />} >
               {/* <Route/> */}
                 <Route path="productdetails" element={<ProductDetails />} />
+                <Route path="home" element={<Home />} />
                 <Route path="mac" element={<IMac />} />
                 <Route path="macmini" element={<MacMini/>} />
                 <Route path="ipadpro" element={<IPadPro />} />
@@ -34,15 +35,9 @@ function App() {
                 <Route path="appletv" element={<AppleTv />} />
                 <Route path="accessories" element={<Accessories />} />
                 <Route path="isystemcare" element={<ISystemCare />} />
-                <Route path="login" element={<Login />} />
-                <Route path="registration" element={<Registration />} />
-                
-
-
-
-
-
           </Route>
+                <Route path="registration" element={<Registration />} />
+                <Route path="login" element={<Login />} />
         </Routes>
       </div>
     </Router>
