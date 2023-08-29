@@ -8,22 +8,26 @@ function Subscribe() {
      <div className="subscrib">
   <div className="text">
     <div className="box_subscribe">
-      <h3>
+      <p className="subscribe_title">
         Subscribe to our newsletter and be the first who benefits from our
         offers. Promotions and new product launches straight to your
         mailbox.
-      </h3>
+      </p>
     </div>
 
     <div className="subscribe">
-      <MDBInput
-        placeholder="Enter your email"
-        id="form1 send"
-        type="text"
-      />
+  <MDBInput
+    placeholder="Enter your email"
+    id="form1 send"
+    type="text"
+    className="input_subscribe"
+  />
 
-      <Button variant="contained">Subscribe</Button>
-    </div>
+  <Button variant="contained" id="subscribe_btn" style={{ marginLeft: '10px' }}>
+    Subscribe
+  </Button>
+</div>
+
   </div>
 </div>
 
