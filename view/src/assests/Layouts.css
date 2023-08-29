@@ -1,4 +1,7 @@
-
+body{
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+Helvetica, Arial, "Lucida Grande", sans-serif;
+}
 
 .logo {
     margin-right: 10px;
@@ -33,12 +36,14 @@ margin-right:25px; }
  .footer_title{
   color: black;
   font-weight: bold;
+  font-size: small;
  }
 .subscribe{
   display: flex;
 }
 .text-reset{
   text-decoration: none;
+  font-size: 12px;
 }
 
 #subscribe input {

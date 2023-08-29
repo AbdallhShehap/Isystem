@@ -72,9 +72,7 @@ function Home() {
                 <h2 className="card-title card_title_topCategories">
                   Installment Plan{" "}
                 </h2>
-                {/* <p className="card-text desc_of_topCategories">
-                  Schedule and reserve classroomof student attendance.
-                </p> */}
+             
               </div>
             </div>
           </div>

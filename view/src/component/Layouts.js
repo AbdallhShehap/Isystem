@@ -123,19 +123,21 @@ function Layouts() {
       
       {isHomePage ? <Home />:  <Outlet />}
 
+        <Subscribe />
       <footer>
         <MDBFooter
           bgColor="light"
           className="text-center text-lg-start text-muted"
         >
+          
           <Subscribe />
          
             <MDBContainer className="text-center text-md-start footer"fluid>
               <MDBRow className="mt-3">
                 <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-                  <h6 className="fw-bold mb-4 footer_title">
+                  <p className="fw-bold mb-4 footer_title">
                     Our Company
-                  </h6>
+                  </p>
                   <p>
                     <a href="#!" className="text-reset">
                       About Us{" "}
@@ -202,11 +204,10 @@ function Layouts() {
                 <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4 ">
                   <h6 className=" fw-bold mb-4 footer_title">
                     <MDBIcon icon="gem"  />
-                    Subscribe & Follow us{" "}
+                    Follow us{" "}
                   </h6>
-                  <p>
-                    Subscribe to our newsletter and get to know our news, deals,
-                    and offers.
+                  <p style={{fontSize:"small"}}>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, illum. Facilis optio iste, ducimus numquam molestiae obcaecati rem quaerat deserunt.
                   </p>
                   <div className="social_media_icon">
                     <Image src={youtube} fluid width={"20px"} />
