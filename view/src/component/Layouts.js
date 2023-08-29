@@ -130,7 +130,7 @@ function Layouts() {
           className="text-center text-lg-start text-muted"
         >
           
-          <Subscribe />
+          {/* <Subscribe /> */}
          
             <MDBContainer className="text-center text-md-start footer"fluid>
               <MDBRow className="mt-3">

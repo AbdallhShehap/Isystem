@@ -29,6 +29,8 @@ body{
   font-size: 90%;
 }
 .card{
+  margin-top: 5%;
+
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;

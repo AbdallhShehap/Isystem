@@ -38,20 +38,16 @@ margin-right:25px; }
   font-weight: bold;
   font-size: small;
  }
-.subscribe{
-  display: flex;
-}
+
 .text-reset{
   text-decoration: none;
   font-size: 12px;
 }
 
-#subscribe input {
-  margin-right: 50px;
-}
-/* .footer{
+
+.footer{
   padding-top: 20px;
-} */
+}
 .social_media_icon{
   display: flex;
   justify-content: space-evenly;
