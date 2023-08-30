@@ -87,11 +87,10 @@ function Layouts() {
                     Accessories
                   </Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="isystemcare">
+                <LinkContainer to="blogdetails">
                   <Nav.Link className="catigories_type" id="catigories_type">
                     {/* <FaShoppingCart /> */}
-                    iSystem Care
-                  </Nav.Link>
+Blog Details                  </Nav.Link>
                 </LinkContainer>
               </Nav>
               <form class="nosubmit">

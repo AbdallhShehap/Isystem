@@ -15,7 +15,7 @@ import ISystemCare from "./component/ISystemCare.js"
 import Login from './component/Login.js';
 import  Registration from "./component/Registration"
 import Home from "./pages/Home.js"
-
+import BlogDetails from './component/BlogDetails.js'
 function App() {
   return (
     <Router>
@@ -34,7 +34,7 @@ function App() {
                 <Route path="audio" element={<Audio />} />
                 <Route path="appletv" element={<AppleTv />} />
                 <Route path="accessories" element={<Accessories />} />
-                <Route path="isystemcare" element={<ISystemCare />} />
+                <Route path="blogdetails" element={<BlogDetails />} />
           </Route>
                 <Route path="registration" element={<Registration />} />
                 <Route path="login" element={<Login />} />
