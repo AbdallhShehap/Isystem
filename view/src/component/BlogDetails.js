@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BlogDetailsData from "../Data/BlogDetailsData.js";
-
+import Image from "react-bootstrap/Image";
+import '../assests/BlogDetails.css'
 function BlogDetails() {
   const [details, setDetails] = useState(BlogDetailsData);
 
@@ -10,26 +11,30 @@ function BlogDetails() {
         <div class="input-group">
           <input
             type="text"
-            class="form-control"
+            className="form-control search_blog"
             placeholder="Search Blog"
             aria-describedby="basic-addon1"
-            style={{ borderRadius: "15px" }}
           />
         </div>
+        
       </form>
-      <div class="square mt-5" style={{ backgroundColor: "#F7F7F7" ,padding:"20px"}}>
+      <div
+        class="square mt-5"
+        style={{ backgroundColor: "#F7F7F7", padding: "20px" }}
+      >
         <div>
-          <img
+       
+          <Image
             src={require("../images/mainCameraedit.png")}
-            alt="camera"
+            fluid
             style={{ float: "left", margin: "5px" }}
           />
         </div>
-        <h3 style={{ fontSize: "25px",fontWeight:"bold"}}>
+        <h3 className="title">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla veniam
           exercitationem, facere non ipsa magni fugit atis!
         </h3>
-        <p style={{ textAlign: "justify", fontSize: "20px" }}>
+        <p className="paragraph">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
@@ -42,21 +47,21 @@ function BlogDetails() {
           exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
           ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
           ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-          qui dolorem eum fugiat quo voluptas nulla pariatur
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-          qui dolorem eum fugiat quo voluptas nulla pariatur
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-          qui dolorem eum fugiat quo voluptas nulla pariatur
+          qui dolorem eum fugiat quo voluptas nulla pariatur dolorem ipsum quia
+          dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+          modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+          voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+          ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+          consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
+          velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+          fugiat quo voluptas nulla pariatur dolorem ipsum quia dolor sit amet,
+          consectetur, adipisci velit, sed quia non numquam eius modi tempora
+          incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
+          enim ad minima veniam, quis nostrum exercitationem ullam corporis
+          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+          autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+          nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+          voluptas nulla pariatur
         </p>
       </div>
       <div class="row">
