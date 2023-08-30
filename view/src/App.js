@@ -6,7 +6,7 @@ import IMac from './component/IMac.js';
 import MacMini from "./component/MacMini .js"
 import IPadPro from "./component/IPadPro.js"
 import IPad from "./component/IPad.js"
-import IPhone from "./component/IPhone.js"
+import Carousel from "./component/IPhone.js"
 import Watch from "./component/Watch.js"
 import Audio from "./component/Audio.js"
 import AppleTv from "./component/AppleTv.js"
@@ -29,7 +29,7 @@ function App() {
                 <Route path="macmini" element={<MacMini/>} />
                 <Route path="ipadpro" element={<IPadPro />} />
                 <Route path="ipad" element={<IPad />} />
-                <Route path="iphone" element={<IPhone />} />
+                <Route path="iphone" element={<Carousel />} />
                 <Route path="watch" element={<Watch />} />
                 <Route path="audio" element={<Audio />} />
                 <Route path="appletv" element={<AppleTv />} />

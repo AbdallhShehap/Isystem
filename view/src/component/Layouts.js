@@ -45,49 +45,49 @@ function Layouts() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="m-auto nav_categories" >
-                <LinkContainer to="/cart">
+                <LinkContainer to="/mac">
                   <Nav.Link  className="catigories_type">
                     {/* <FaShoppingCart /> */}
                     Mac
                   </Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/signin">
+                <LinkContainer to="ipad">
                   <Nav.Link href="/login" className="catigories_type" id="catigories_type">
                     {/* <FaUser /> */}
                     iPad
                   </Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/cart">
+                <LinkContainer to="iphone">
                   <Nav.Link className="catigories_type" id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     iPhone
                   </Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/cart">
+                <LinkContainer to="watch">
                   <Nav.Link className="catigories_type" id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     Watch
                   </Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/cart">
+                <LinkContainer to="audio">
                   <Nav.Link className="catigories_type" id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     Audio
                   </Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/cart">
+                <LinkContainer to="appletv">
                   <Nav.Link className="catigories_type"id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     Apple Tv
                   </Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/cart">
+                <LinkContainer to="accessories">
                   <Nav.Link className="catigories_type"id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     Accessories
                   </Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/cart">
+                <LinkContainer to="isystemcare">
                   <Nav.Link className="catigories_type" id="catigories_type">
                     {/* <FaShoppingCart /> */}
                     iSystem Care
